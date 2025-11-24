@@ -27,8 +27,8 @@ document.addEventListener("DOMContentLoaded", function () {
     if (campImageContainer && campModal && modalImg1 && modalImg2) {
         campImageContainer.onclick = function () {
             campModal.style.display = "flex";
-            modalImg1.src = "img/poster/MT포스터_1.jpg";
-            modalImg2.src = "img/poster/MT포스터_2.jpg";
+            modalImg1.src = "img/poster/MTposter01.jpg";
+            modalImg2.src = "img/poster/MTposter02.jpg";
         }
     }
 
