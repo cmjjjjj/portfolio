@@ -13,7 +13,7 @@ document.querySelectorAll('.detail-item .img img').forEach(img => {
     });
 });
 
-// 닫기 버튼
+// 닫기 버튼 클릭 시 닫기
 document.querySelector('.modal-close').addEventListener('click', () => {
     document.getElementById('imageModal').style.display = "none";
 });
@@ -22,5 +22,12 @@ document.querySelector('.modal-close').addEventListener('click', () => {
 document.getElementById('imageModal').addEventListener('click', (e) => {
     if (e.target === e.currentTarget) {
         e.currentTarget.style.display = "none";
+    }
+});
+
+// ESC 눌러도 닫기
+document.addEventListener('keydown', (e) => {
+    if (e.key === "Escape") {
+        document.getElementById('imageModal').style.display = "none";
     }
 });
