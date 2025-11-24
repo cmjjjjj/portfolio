@@ -37,7 +37,6 @@
                         <li><a href="details.html">상세페이지 디자인</a></li>
                         <li><a href="banner.html">배너 디자인</a></li>
                         <li><a href="appre.html">모바일앱 리브랜딩</a></li>
-                        <li><a href="ads.html">광고소재 디자인</a></li>
                     </ul>
                 </li>
                 <li>
@@ -54,16 +53,18 @@
     <div class="menu">
         <h1>상세페이지 디자인</h1>
         <span class="in_nav">
-            클라이언트의 니즈에 맞춰 진행했던 상세페이지 디자인 작업물 입니다.
+            회사의 니즈에 맞춰 소비자의 언어로 풀어낸 상세페이지 디자인 작업물 입니다.
         </span>
     </div>
 
     <div class="details-container">
         <!-- 치킨 -->
         <div class="detail-item">
-            <a href="#">
+            <a href="detalis_chicken.html">
                 <div class="img">
-                    <img src="/img/datails/로스트치킨/images/로스트치킨-리뉴얼_01.jpg" alt="어벤져스 치킨">
+                    <img src="/img/datails/chicken/images/chicken01.jpg"
+                    data-full="/img/datails/chicken/chickenpage.jpg"
+                    alt="어벤져스 치킨">
                     <div class="content">
                         <h3>어벤져스 치킨</h3>
                         <span class="day">작업기간 : 2024.01.03 </span>
@@ -74,9 +75,11 @@
 
         <!-- 오렌지 -->
         <div class="detail-item">
-            <a href="#">
+            <a href="details_orange.html">
                 <div class="img">
-                    <img src="/img/datails/오렌지/images/오렌지_01.jpg" alt="블랙라벨 오렌지">
+                    <img src="/img/datails/orange/images/orange01.jpg"
+                    data-full="/img/datails/orange/orangepage.jpg"
+                    alt="블랙라벨 오렌지">
                     <div class="content">
                         <h3>블랙라벨 오렌지</h3>
                         <span class="day">작업기간 : 2024.02.28 </span>
@@ -87,9 +90,11 @@
 
         <!-- 화과자만주 -->
         <div class="detail-item">
-            <a href="#">
+            <a href="details_set.html">
                 <div class="img">
-                    <img src="/img/datails/화과자만주/images/화과자만주_01.jpg" alt="화과자만주 선물세트">
+                    <img src="/img/datails/snack/images/snack01.jpg"
+                    data-full="/img/datails/snack/snackpage.jpg"
+                    alt="화과자만주 선물세트">
                     <div class="content">
                         <h3>화과자만주 선물세트</h3>
                         <span class="day">작업기간 : 2024.01.16 </span>
@@ -100,9 +105,11 @@
 
         <!-- 겉절이 -->
         <div class="detail-item">
-            <a href="#">
+            <a href="details_kimchi.html">
                 <div class="img">
-                    <img src="/img/datails/겉절이/images/겉절이_01.jpg" alt="겉절이">
+                    <img src="/img/datails/kimchi/images/kimchi01.jpg"
+                    data-full="/img/datails/kimchi/kimchipage.jpg"
+                    alt="겉절이">
                     <div class="content">
                         <h3>겉절이</h3>
                         <span class="day">작업기간 : 2024.08.24 </span>
@@ -118,6 +125,14 @@
             <p class="email">Contact: <a href="mailto:errr48@naver.com">errr48@naver.com</a></p>
         </div>
     </footer>
+
+    <!-- 이미지 팝업 모달 -->
+<div id="imageModal" class="modal">
+    <span class="modal-close">&times;</span>
+    <div class="modal-content">
+        <img id="modalImg" src="" alt="">
+    </div>
+</div>
 
 </body>
 
