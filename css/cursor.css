@@ -1,0 +1,25 @@
+/* cursor.css */
+
+/* 기존 border 원 → 안이 채워진 반투명 흰색 원 */
+.cursor-ring {
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    background: rgba(255, 255, 255, 0.3); /* 반투명 흰색 */
+    border-radius: 50%;
+    pointer-events: none;
+    transform: translate(-50%, -50%);
+    transition: background 0.15s ease, transform 0.15s ease;
+    z-index: 99999;
+}
+
+/* 클릭 중일 때 (#00d4ff) */
+.cursor-ring.click {
+    background: #00d4ff;
+    transform: translate(-50%, -50%) scale(0.7); /* 약간 줄어들어서 클릭 느낌 */
+}
+
+/* 기본 커서 숨기기 */
+body {
+    cursor: none !important;
+}
